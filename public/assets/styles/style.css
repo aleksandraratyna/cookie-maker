@@ -1,0 +1,60 @@
+body {
+    font-family: Garamond;
+}
+
+.cookie-preview {
+    width: 601px;
+    height: 640px;
+}
+
+.error {
+    border: 1px solid red;
+    padding: 15px;
+    margin: 5px;
+    background-color: #f6d7d7;
+}
+
+.success {
+    border: 1px solid green;
+    padding: 15px;
+    margin: 5px;
+    background-color: #bfeabf;
+}
+
+.btn {
+    background-color: #b0a797;
+    color: #000;
+    border: 1px solid #463412;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-disabled {
+    background-color: #bbb7b7;
+    color: #fff;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn-small {
+    padding: 0 5px;
+    margin: 0;
+}
+
+.btn-big {
+    padding: 10px 20px;
+    font-size: 110%;
+}
+
+.cart-img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.jar-img {
+    vertical-align: bottom;
+}

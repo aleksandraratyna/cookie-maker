@@ -1,0 +1,23 @@
+<h1>Configure your cookie!<img src="/assets/images/icons8-cookie-jar-48.png" class="jar-img" alt="Cute cookie jar"></h1>
+
+<h2>First of all, select cookie base:</h2>
+
+{{> base-selector}}
+
+<h2>Then, select your favourite toppings:</h2>
+
+{{#each allAddons}}
+<a href="/configurator/add-addon/{{this.[0]}}"
+    class="btn {{#if (isInArray @root.cookie.addons this.[0])}}btn-disabled{{/if}}">Add {{this.[0]}} for {{this.[1]}}
+    PLN</a>
+{{/each}}
+
+{{#if cookie.base}}
+{{> cookie-preview}}
+{{> addons}}
+<a href="/order/summary" class="btn btn-big"><img src="/assets/images/icons8-cookies-62.png" class="cart-img"
+        alt="">Order now!</a>
+{{else}}
+<p><strong>Please select base of your cookie to see its preview and price summary.</strong></p>
+<p>{{> base-selector}}</p>
+{{/if}}
